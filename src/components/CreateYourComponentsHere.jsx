@@ -1,11 +1,17 @@
-import React from "react";
+import { Button } from "./Button";
+import { useThemeContext } from "../contexts/ThemeContext";
 
 export const CreateYourComponentsHere = () => {
+  const { toggleTheme } = useThemeContext();
+
   return (
     <div>
-      This is just a component to upload to github to include the components
-      folder since if no file is stored in the folder, the github repo won't
-      upload it.
+      <Button onClick={toggleTheme}>Toggle theme</Button>
     </div>
   );
 };
+
+// Hi Gaby ! Check out these React shortcuts :)
+// rafce : shortcut for creating react functional component with an export
+// rafc : create a functional component without an export
+// rpce : functional component with prop-types

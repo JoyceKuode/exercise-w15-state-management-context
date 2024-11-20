@@ -1,3 +1,13 @@
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { CreateYourComponentsHere } from "./components/CreateYourComponentsHere";
+
 export const App = () => {
-  return <div className="App">Hello Coders!</div>;
+  return (
+    <ThemeProvider>
+      <>
+        <h1>Hello</h1>
+        <CreateYourComponentsHere />
+      </>
+    </ThemeProvider>
+  );
 };
